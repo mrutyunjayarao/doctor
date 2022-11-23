@@ -6,7 +6,7 @@
   <nz-layout>
     <nz-sider nzWidth="200px" nzTheme="light" >
       <ul nz-menu nzMode="inline" class="sider-menu" >
-        <li nz-menu-item routerLink={{item.route}} *ngFor="let item of menuItems">
+        <li nz-menu-item routerLink={{item.route}} *ngFor="let item of menuItems" [nzMatchRouter]="true" [nzSelected]="true">
           <span class="material-symbols-outlined"> {{item.icon}} </span> &nbsp; {{item.title}}
         </li>
         <!-- <li nz-menu-item routerLink="/dashboard">
