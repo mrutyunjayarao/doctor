@@ -23,7 +23,8 @@ const routes: Routes = [
   {path:'faq',component: FaqComponent},
   {path:'testimonials',component: TestimonialsComponent},
   {path:'settings',component: SettingsComponent},
-  {path:'reset_password',component: ResetPasswordComponent}
+  {path:'reset_password',component: ResetPasswordComponent},
+  {path:'',redirectTo:'dashboard',pathMatch: 'full'}
 ];
 
 @NgModule({
