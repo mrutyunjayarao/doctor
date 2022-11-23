@@ -1,0 +1,17 @@
+.send-request {
+  margin-bottom: 16px;
+
+}
+
+
+nz-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
+
+nz-header {
+  background: none;
+  font-size: large;
+  font-weight: 500;
+}
