@@ -1,0 +1,57 @@
+<nz-layout>
+  <nz-header>
+    <div class="logo">My website</div>
+  </nz-header>
+
+  <nz-layout>
+    <nz-sider nzWidth="200px" nzTheme="light" >
+      <ul nz-menu nzMode="inline" class="sider-menu" >
+        <li nz-menu-item routerLink={{item.route}} *ngFor="let item of menuItems">
+          <span class="material-symbols-outlined"> {{item.icon}} </span> &nbsp; {{item.title}}
+        </li>
+        <!-- <li nz-menu-item routerLink="/dashboard">
+          <span class="material-symbols-outlined"> dashboard </span> &nbsp; Dashboard
+        </li>
+        <li nz-menu-item routerLink="/appointments">
+          <span class="material-symbols-outlined"> fact_check </span> &nbsp; Appointments
+        </li>
+        <li nz-menu-item routerLink="/qanda">
+          <span class="material-symbols-outlined"> quiz </span> &nbsp; Q & A
+        </li>
+        <li nz-menu-item routerLink="/registered_users">
+          <span class="material-symbols-outlined"> group </span> &nbsp; Registered Users
+        </li>
+        <li nz-menu-item routerLink="/about_me">
+          <span class="material-symbols-outlined"> person_filled </span> &nbsp; About Me
+        </li>
+        <li nz-menu-item routerLink="/articles">
+          <span class="material-symbols-outlined"> article </span> &nbsp; Articles
+        </li>
+        <li nz-menu-item routerLink="/gallery">
+          <span class="material-symbols-outlined"> gallery_thumbnail </span> &nbsp; Gallery
+        </li>
+        <li nz-menu-item routerLink="/faq">
+          <span class="material-symbols-outlined"> description </span> &nbsp; FAQ
+        </li>
+        <li nz-menu-item routerLink="/testimonials">
+          <span class="material-symbols-outlined"> article </span> &nbsp; Testimonials
+        </li>
+        <li nz-menu-item routerLink="/settings">
+          <span class="material-symbols-outlined"> settings </span> &nbsp; Settings
+        </li>
+        <li nz-menu-item routerLink="/reset_password">
+          <span class="material-symbols-outlined"> lock_reset </span> &nbsp; Reset
+          Password
+        </li> -->
+      </ul>
+    </nz-sider>
+    <nz-layout class="inner-layout">
+      <nz-breadcrumb>
+        {{ title }}
+      </nz-breadcrumb>
+      <nz-content>
+        <router-outlet></router-outlet>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>
